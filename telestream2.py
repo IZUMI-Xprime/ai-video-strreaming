@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "your_secret_key")  # Secure secret key
 
 # Load YOLO model
-model = YOLO(r'C:\Users\darni\Downloads\yolo11s_segment.pt')
+model = YOLO("yolov8x")
 
 # Replace with your credentials and load from environment variables for security
 USER_CREDENTIALS = {"admin": "password123"}
