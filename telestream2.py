@@ -152,9 +152,10 @@ def generate_frames():
                b'Content-Type: image/jpeg\r\n\r\n' + jpeg.tobytes() + b'\r\n\r\n')
 
 
-@app.route('/')
-def welcome():
-    return render_template('welcome.html', title="Welcome")
+@app.route("/")
+def home():
+    return render_template("welcome.html")
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
